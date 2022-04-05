@@ -1,0 +1,122 @@
+export const networks = [
+  {
+    name: 'Ethereum',
+    chainId: 1,
+    rpcUrl: 'https://mainnet.infura.io/v3/d55b540e0fbd4c449c1d944165065ec1',
+    logoUrl: 'https://m721-assets.s3.amazonaws.com/networks/ethereum.png',
+    explorerUrl: 'https://etherscan.io/',
+    addressUrl: 'https://etherscan.io/address/',
+    blockUrl: 'https://etherscan.io/block/',
+    transactionUrl: 'https://etherscan.io/tx/',
+  },
+  {
+    name: 'Ropsten Test Network',
+    chainId: 3,
+    rpcUrl: 'https://ropsten.infura.io/v3/d55b540e0fbd4c449c1d944165065ec1',
+    logoUrl: 'https://m721-assets.s3.amazonaws.com/networks/ropsten.png',
+    explorerUrl: 'https://ropsten.etherscan.io/',
+    addressUrl: 'https://ropsten.etherscan.io/address/',
+    blockUrl: 'https://ropsten.etherscan.io/block/',
+    transactionUrl: 'https://ropsten.etherscan.io/tx/',
+  },
+  {
+    name: 'Rinkeby Test Network',
+    chainId: 4,
+    rpcUrl: 'https://rinkeby.infura.io/v3/d55b540e0fbd4c449c1d944165065ec1',
+    logoUrl: 'https://m721-assets.s3.amazonaws.com/networks/rinkeby.png',
+    explorerUrl: 'https://rinkeby.etherscan.io/',
+    addressUrl: 'https://rinkeby.etherscan.io/address/',
+    blockUrl: 'https://rinkeby.etherscan.io/block/',
+    transactionUrl: 'https://rinkeby.etherscan.io/tx/',
+  },
+  {
+    name: 'Görli Test Network',
+    chainId: 5,
+    rpcUrl: 'https://goerli.infura.io/v3/d55b540e0fbd4c449c1d944165065ec1',
+    logoUrl: 'https://m721-assets.s3.amazonaws.com/networks/goerli.png',
+    explorerUrl: 'https://goerli.etherscan.io/',
+    addressUrl: 'https://goerli.etherscan.io/address/',
+    blockUrl: 'https://goerli.etherscan.io/block/',
+    transactionUrl: 'https://goerli.etherscan.io/tx/',
+  },
+  {
+    name: 'Kovan Test Network',
+    chainId: 42,
+    rpcUrl: 'https://kovan.infura.io/v3/d55b540e0fbd4c449c1d944165065ec1',
+    logoUrl: 'https://m721-assets.s3.amazonaws.com/networks/kovan.png',
+    explorerUrl: 'https://kovan.etherscan.io/',
+    addressUrl: 'https://kovan.etherscan.io/address/',
+    blockUrl: 'https://kovan.etherscan.io/block/',
+    transactionUrl: 'https://kovan.etherscan.io/tx/',
+  },
+  {
+    name: 'Polygon',
+    chainId: 137,
+    rpcUrl: 'https://polygon-rpc.com',
+    logoUrl: 'https://m721-assets.s3.amazonaws.com/networks/polygon.png',
+    explorerUrl: 'https://polygonscan.com/',
+    addressUrl: 'https://polygonscan.com/address/',
+    blockUrl: 'https://polygonscan.com/block/',
+    transactionUrl: 'https://polygonscan.com/tx/',
+  },
+  {
+    name: 'Optimism',
+    chainId: 10,
+    rpcUrl: 'https://mainnet.optimism.io',
+    logoUrl: 'https://m721-assets.s3.amazonaws.com/networks/optimism.png',
+    explorerUrl: 'https://optimistic.etherscan.io/',
+    addressUrl: 'https://optimistic.etherscan.io/address/',
+    blockUrl: 'https://optimistic.etherscan.io/tx/',
+    transactionUrl: 'https://optimistic.etherscan.io/tx/',
+  },
+  {
+    name: 'Arbitrum',
+    chainId: 42161,
+    rpcUrl: 'https://arb1.arbitrum.io/rpc',
+    logoUrl: 'https://m721-assets.s3.amazonaws.com/networks/arbitrum.png',
+    explorerUrl: 'https://arbiscan.io/',
+    addressUrl: 'https://arbiscan.io/address/',
+    blockUrl: 'https://arbiscan.io/block/',
+    transactionUrl: 'https://arbiscan.io/tx/',
+  },
+  {
+    name: 'Binance Smart Chain',
+    chainId: 56,
+    rpcUrl: 'https://bsc-dataseed.binance.org',
+    logoUrl: 'https://m721-assets.s3.amazonaws.com/networks/binancesmartchain.png',
+    explorerUrl: 'https://bscscan.com/',
+    addressUrl: 'https://bscscan.com/address/',
+    blockUrl: 'https://bscscan.com/block/',
+    transactionUrl: 'https://bscscan.com/tx/',
+  },
+  {
+    name: 'xDai Chain',
+    chainId: 100,
+    rpcUrl: 'https://rpc.xdaichain.com/',
+    logoUrl: 'https://m721-assets.s3.amazonaws.com/networks/xdai.png',
+    explorerUrl: 'https://blockscout.com/xdai/mainnet/',
+    addressUrl: 'https://blockscout.com/xdai/mainnet/address/',
+    blockUrl: 'https://blockscout.com/xdai/mainnet/block/',
+    transactionUrl: 'https://blockscout.com/xdai/mainnet/tx/',
+  },
+  {
+    name: 'Avalanche',
+    chainId: 43114,
+    rpcUrl: 'https://api.avax.network/ext/bc/C/rpc',
+    logoUrl: 'https://m721-assets.s3.amazonaws.com/networks/avalanche.png',
+    explorerUrl: 'https://snowtrace.io/',
+    addressUrl: 'https://snowtrace.io/address/',
+    blockUrl: 'https://snowtrace.io/block/',
+    transactionUrl: 'https://snowtrace.io/tx/',
+  },
+]
+
+export const appName = 'APP_NAME'
+
+export const appLogoUrl = ''
+
+export const supportedNetworkIds = networks.map((n: any) => n.chainId)
+
+export const infuraUrl: any = process.env.INFURA_URL
+
+export const fortmaticUrl: any = process.env.FORTMATIC_URL
